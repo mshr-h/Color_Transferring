@@ -8,14 +8,14 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    auto target = QImage_to_img_rgb(new QImage(argv[1]));
-    auto source = QImage_to_img_rgb(new QImage(argv[2]));
+    struct img_rgb_t *target = QImage_to_img_rgb(new QImage(argv[1]));
+    struct img_rgb_t *source = QImage_to_img_rgb(new QImage(argv[2]));
 
     int wnd_ht = 5; // size of local windows
     int wnd_wt = 5; // size of local windows
-    auto out = transfer_color(target, source, wnd_ht, wnd_wt);
+    struct img_rgb_t *out = transfer_color(target, source, wnd_ht, wnd_wt);
 
-    auto outImg = img_rgb_to_QImage(out);
+    QImage outImg = img_rgb_to_QImage(out);
 
     outImg.save(argv[3], "PNG");
 
