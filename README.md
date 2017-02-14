@@ -21,8 +21,6 @@ Colorization is a technique to convert a grayscale image into a colored image.
 | :----: | :-------: | :----: |
 | ![](inImg_db/foliage3_0.png) | ![](inImg_db/26gouti.jpg) | ![](outImg_db/foliage_3_26gouti.png) |
 | ![](inImg_db/foliage3_0.png) | ![](inImg_db/foliage_1.png) | ![](outImg_db/foliage_3_1.png) |
-| ![](inImg_db/target01.jpg) | ![](inImg_db/reference01.jpg) | ![](outImg_db/output01.jpg) |
-| ![](inImg_db/target02.jpg) | ![](inImg_db/reference02.jpg) | ![](outImg_db/output02.jpg) |
 | ![](inImg_db/wheat.png) | ![](inImg_db/knitwork.png) | ![](outImg_db/wheat_knitwork.png) |
 
 - Window size: 5x5 pixels
